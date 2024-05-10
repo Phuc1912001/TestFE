@@ -1,0 +1,178 @@
+.active {
+  background-color: rgba(250, 174, 151, 0.133);
+  color: rgb(219, 63, 63) !important;
+  border-left: 2px solid red;
+}
+
+.share-border-table.ant-table-wrapper {
+  .ant-table-content {
+    border: 1px solid #e6e7e8;
+    border-radius: 6px;
+  }
+
+  .ant-table-tbody > tr {
+    &:last-of-type {
+      > td {
+        border-bottom: 0px;
+      }
+    }
+  }
+}
+
+.share-sticky {
+  position: sticky;
+  flex-shrink: 0;
+  top: 0;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .share-sticky {
+      display: none;
+    }
+}
+
+.share-sticky-mobile {
+  position: sticky;
+  flex-shrink: 0;
+  top: 0;
+  z-index: 1;
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .share-sticky-mobile {
+      position: sticky;
+      flex-shrink: 0;
+      top: 0;
+      z-index: 1;
+      display: block;
+    }
+}
+
+.createBtn {
+  // margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  background-color: rgba(245, 57, 0, 0.133);
+  height: 40px;
+  padding: 0 8px;
+  width: max-content;
+  border-radius: 4px;
+  font-weight: 600;
+
+  &:hover {
+    background-color: rgba(245, 57, 0, 0.233);
+  }
+}
+
+.editBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 4px;
+  &:hover {
+    background-color: rgba(245, 57, 0, 0.233);
+  }
+}
+
+.mr {
+  margin-right: 8px;
+}
+
+.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+  color: rgba(0, 0, 0, 0.88);
+  border-color: #131212;
+  background: #ffffff;
+}
+
+.btn-orange {
+  padding: 4px 15px;
+  line-height: 1.5714285714285714;
+  border: 1px solid rgba(245, 57, 0, 0.233);
+  border-radius: 6px;
+  background-color: rgba(245, 57, 0, 0.233);
+  cursor: pointer;
+  &:hover {
+    border-color: red;
+  }
+}
+
+.ant-btn-primary {
+  color: black;
+  background: rgba(245, 57, 0, 0.233);
+  box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
+  border: 1px solid rgba(245, 57, 0, 0.233);
+}
+
+.ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
+  color: black;
+  background: rgba(245, 57, 0, 0.433);
+}
+
+.text-item {
+  background-color: rgba(245, 57, 0, 0.133);
+  width: 100px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.ant-switch-checked {
+  background: rgba(245, 57, 0, 0.433) !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(187, 186, 186);
+  
+  border-radius: 4px;
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(146, 145, 145);
+  
+}
+
+
+.hcis-one-rows,
+.hcis-two-rows,
+.hcis-three-rows,
+.hcis-four-rows {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+  cursor: pointer;
+}
+
+.hcis-one-rows {
+  -webkit-line-clamp: 1;
+}
+
+.hcis-two-rows {
+  -webkit-line-clamp: 2;
+}
+
+.hcis-three-rows {
+  -webkit-line-clamp: 3;
+}
+
+.hcis-four-rows {
+  -webkit-line-clamp: 4;
+}
+
+.customTooltip {
+  color: #222222;
+}
